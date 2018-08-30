@@ -3,6 +3,7 @@ FROM dev
 RUN apt-get update && apt-get install -y \
   build-essential autoconf libtool git pkg-config curl \
   automake libtool curl make g++ unzip \
+  cmake clang \
   && apt-get clean
 
 ENV GRPC_RELEASE_TAG v1.10.x
