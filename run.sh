@@ -1,1 +1,1 @@
-sudo docker run -it -v `pwd`/shared:/shared graphbase-dev /bin/zsh
+sudo docker run -it -v $(readlink -f `pwd`/shared/graphbase):/shared/graphbase graphbase-dev /bin/zsh
